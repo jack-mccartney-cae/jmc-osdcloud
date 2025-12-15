@@ -32,6 +32,9 @@ Import-Module OSD -Force
 $OSDModuleResource.StartOSDCloudGUI.updateFirmware = $true
 $OSDModuleResource.StartOSDCloudGUI.ClearDiskConfirm = $false
 $OSDModuleResource.StartOSDCloudGUI.BrandColor = '#025373'
+$OSDModuleResource.StartOSDCloudGUI.OSEdition = 'Pro'
+$OSDModuleResource.StartOSDCloudGUI.OSActivation = 'Retail'
+$OSDModuleResource.StartOSDCloudGUI.OSLanguage = 'en-gb'
 
 switch ($input)
 {
