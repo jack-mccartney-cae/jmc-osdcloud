@@ -29,6 +29,9 @@ Install-Module OSD -Force
 
 Write-Host  -ForegroundColor Cyan "Importing PowerShell Modules"
 Import-Module OSD -Force
+$OSDModuleResource.StartOSDCloudGUI.updateFirmware = $true
+$OSDModuleResource.StartOSDCloudGUI.ClearDiskConfirm = $false
+$OSDModuleResource.StartOSDCloudGUI.BrandColor = '#025373'
 
 switch ($input)
 {
