@@ -9,9 +9,9 @@ if ((Get-MyComputerModel) -match 'Virtual') {
 cls
 Write-Host "===================== Main Menu ======================="
 Write-Host "1: Zero-Touch WIN10 22H2 | en-gb | Enterprise" -ForegroundColor Green
-Write-Host "2: Zero-Touch WIN10 22H2 | en-gb | Pro" -ForegroundColor Green
+Write-Host "2: Zero-Touch WIN10 22H2 | en-gb | Pro" -ForegroundColor Magenta
 Write-Host "3: Zero-Touch WIN11 22H2 | en-gb | Enterprise" -ForegroundColor Green
-Write-Host "4: Zero-Touch WIN11 22H2 | en-gb | Pro" -ForegroundColor Green
+Write-Host "4: Zero-Touch WIN11 22H2 | en-gb | Pro" -ForegroundColor Magenta
 Write-Host "5: Zero-Touch WIN11 23H2 | en-gb | Enterprise" -ForegroundColor Green
 Write-Host "6: Zero-Touch WIN11 23H2 | en-gb | Pro" -ForegroundColor Magenta
 Write-Host "7: Zero-Touch WIN11 24H2 | en-gb | Enterprise" -ForegroundColor Green
@@ -41,10 +41,10 @@ switch ($input)
     '4' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 22H2 x64' -OSEdition Pro -ZTI }
     '5' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Enterprise -ZTI }
     '6' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Pro -ZTI }
-    '7' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Enterprise -ZTI }
-    '8' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Pro -ZTI }
-    '9' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Enterprise -ZTI }
-    '10' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Pro -ZTI }
+    '7' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 24H2 x64' -OSEdition Enterprise -ZTI }
+    '8' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 24H2 x64' -OSEdition Pro -ZTI }
+    '9' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 25H2 x64' -OSEdition Enterprise -ZTI }
+    '10' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 25H2 x64' -OSEdition Pro -ZTI }
     '11' { Start-OSDCloudGUI -Brand 'Jack McCartney'} 
     '0' { Exit }
 }
