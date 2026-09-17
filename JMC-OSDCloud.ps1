@@ -45,7 +45,7 @@ switch ($input)
     '8' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 24H2 x64' -OSEdition Pro -ZTI }
     '9' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 25H2 x64' -OSEdition Enterprise -ZTI }
     '10' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 25H2 x64' -OSEdition Pro -ZTI }
-    '11' { Start-OSDCloudGUI -Brand 'Jack McCartney'} 
+    '11' { Start-OSDCloudGUI -Brand 'JMC'} 
     '0' { Exit }
 }
 
