@@ -8,17 +8,13 @@ if ((Get-MyComputerModel) -match 'Virtual') {
 }
 cls
 Write-Host "===================== Main Menu ======================="
-Write-Host "1: Zero-Touch WIN10 22H2 | en-gb | Enterprise" -ForegroundColor Green
-Write-Host "2: Zero-Touch WIN10 22H2 | en-gb | Pro" -ForegroundColor Magenta
-Write-Host "3: Zero-Touch WIN11 22H2 | en-gb | Enterprise" -ForegroundColor Green
-Write-Host "4: Zero-Touch WIN11 22H2 | en-gb | Pro" -ForegroundColor Magenta
-Write-Host "5: Zero-Touch WIN11 23H2 | en-gb | Enterprise" -ForegroundColor Green
-Write-Host "6: Zero-Touch WIN11 23H2 | en-gb | Pro" -ForegroundColor Magenta
-Write-Host "7: Zero-Touch WIN11 24H2 | en-gb | Enterprise" -ForegroundColor Green
-Write-Host "8: Zero-Touch WIN11 24H2 | en-gb | Pro" -ForegroundColor Magenta
-Write-Host "9: Zero-Touch WIN11 25H2 | en-gb | Enterprise" -ForegroundColor Green
-Write-Host "10: Zero-Touch WIN11 25H2 | en-gb | Pro" -ForegroundColor Magenta
-Write-Host "11: OSDCloudGUI" -ForegroundColor Cyan
+Write-Host "1: Zero-Touch WIN10 22H2 | en-gb | Pro" -ForegroundColor Magenta
+Write-Host "2: Zero-Touch WIN11 22H2 | en-gb | Pro" -ForegroundColor Magenta
+Write-Host "3" Zero-Touch WIN11 23H2 | en-gb | Pro" -ForegroundColor Magenta
+Write-Host "4: Zero-Touch WIN11 24H2 | en-gb | Pro" -ForegroundColor Magenta
+Write-Host "5: Zero-Touch WIN11 25H2 | en-gb | Pro" -ForegroundColor Magenta
+Write-Host "6: Zero-Touch WIN11 26H2 | en-gb | Pro" -ForegroundColor Magenta
+Write-Host "7: OSDCloudGUI" -ForegroundColor Cyan
 Write-Host "0: Exit" -ForegroundColor Red
 $input = Read-Host "Please make a selection"
 Write-Host  -ForegroundColor Yellow "Loading OSDCloud..."
@@ -35,17 +31,13 @@ $OSDModuleResource.StartOSDCloudGUI.BrandColor = '#025373'
 
 switch ($input)
 {
-    '1' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 10 22H2 x64' -OSEdition Enterprise -ZTI } 
-    '2' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 10 22H2 x64' -OSEdition Pro -ZTI }
-    '3' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 22H2 x64' -OSEdition Enterprise -ZTI } 
-    '4' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 22H2 x64' -OSEdition Pro -ZTI }
-    '5' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Enterprise -ZTI }
-    '6' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Pro -ZTI }
-    '7' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 24H2 x64' -OSEdition Enterprise -ZTI }
-    '8' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 24H2 x64' -OSEdition Pro -ZTI }
-    '9' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 25H2 x64' -OSEdition Enterprise -ZTI }
-    '10' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 25H2 x64' -OSEdition Pro -ZTI }
-    '11' { Start-OSDCloudGUI -Brand 'JMC'} 
+    '1' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 10 22H2 x64' -OSEdition Pro -ZTI }
+    '2' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 22H2 x64' -OSEdition Pro -ZTI }
+    '3' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 23H2 x64' -OSEdition Pro -ZTI }
+    '4' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 24H2 x64' -OSEdition Pro -ZTI }
+    '5' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 25H2 x64' -OSEdition Pro -ZTI }
+    '6' { Start-OSDCloud -OSLanguage en-gb -OSName 'Windows 11 26H2 x64' -OSEdition Pro -ZTI }
+    '7' { Start-OSDCloudGUI -Brand 'JMC'} 
     '0' { Exit }
 }
 
