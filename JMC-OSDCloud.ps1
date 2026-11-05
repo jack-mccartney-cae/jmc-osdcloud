@@ -10,7 +10,7 @@ cls
 Write-Host "===================== Main Menu ======================="
 Write-Host "1: Zero-Touch WIN10 22H2 | en-gb | Pro" -ForegroundColor Magenta
 Write-Host "2: Zero-Touch WIN11 22H2 | en-gb | Pro" -ForegroundColor Magenta
-Write-Host "3" Zero-Touch WIN11 23H2 | en-gb | Pro" -ForegroundColor Magenta
+Write-Host "3: Zero-Touch WIN11 23H2 | en-gb | Pro" -ForegroundColor Magenta
 Write-Host "4: Zero-Touch WIN11 24H2 | en-gb | Pro" -ForegroundColor Magenta
 Write-Host "5: Zero-Touch WIN11 25H2 | en-gb | Pro" -ForegroundColor Magenta
 Write-Host "6: Zero-Touch WIN11 26H2 | en-gb | Pro" -ForegroundColor Magenta
